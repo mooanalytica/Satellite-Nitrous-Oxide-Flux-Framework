@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+data/
+outputs/
+gee_cache/
+*.tif
+*.shp
+*.dbf
+*.prj
+*.shx
+*.csv
+!requirements.txt
+.DS_Store
+*.ipynb_checkpoints/
