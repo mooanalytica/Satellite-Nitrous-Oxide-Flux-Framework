@@ -1,4 +1,4 @@
-# N₂O Emission Framework — Canada (500 m Grid)
+# N₂O Emission Framework - Canada (500 m Grid)
 
 Satellite-enhanced N₂O estimation framework for Canadian agricultural soils at 500 m resolution using a per-pixel Tier 2 emission-factor approach.
 
@@ -16,18 +16,13 @@ Satellite-enhanced N₂O estimation framework for Canadian agricultural soils at
 ## Repository Structure
 
 ```
-n2o_canada/
-├── src/
-│   ├── config.py           # paths, constants, year settings, livestock parameters
-│   ├── grid.py             # 500 m EPSG:3347 grid definition and Canada land mask
-│   ├── gee_export.py       # GEE authentication, Drive API, covariate export/download
-│   ├── covariates.py       # load and reproject covariate GeoTIFFs to grid
-│   ├── ag_mask.py          # agricultural mask (AAFC ACI) and SLC soil properties
-│   ├── emission_model.py   # per-pixel N₂O emission model
-│   └── uncertainty.py      # parameter sensitivity (tornado) and Monte Carlo UQ
-├── data/                   # (gitignored) input shapefiles and CSVs
-├── outputs/                # (gitignored) generated outputs
-├── gee_cache/              # (gitignored) cached GEE GeoTIFFs
+├── config.py           # paths, constants, year settings, livestock parameters
+├── grid.py             # 500 m EPSG:3347 grid definition and Canada land mask
+├── gee_export.py       # GEE authentication, Drive API, covariate export/download
+├── covariates.py       # load and reproject covariate GeoTIFFs to grid
+├── ag_mask.py          # agricultural mask (AAFC ACI) and SLC soil properties
+├── emission_model.py   # per-pixel N₂O emission model
+└── uncertainty.py      # parameter sensitivity (tornado) and Monte Carlo UQ
 ├── requirements.txt
 ├── .gitignore
 └── README.md
